@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <!-- 제이쿼리 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- 팬시박스 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main_header">
+        <div class="logo">
+            <h1><a href="./">PORTFOLIO</a></h1>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="./">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main_visual">
+        <div class="left">
+            <header class="title">
+                <h2>
+                    <span>Hello, I'm</span>
+                    <span>Cha Jin Ju</span>
+                </h2>
+            </header>
+        </div>
+        <div class="right"></div>
+        <!-- 여기는 이미지(bg) -->
+    </section>
+
+<!-- about -->
+<section id="about">
+    <div class="about_left">
+        <div class="box"></div>
+        <img src="images/pic.jpeg" alt="profile image">
+    </div>
+    <div class="about_right">
+        <header class="section_header">
+            <span>who am i</span>
+            <h2>ABOUT</h2>
+        </header>
+        <article>
+            <p>
+                보내는 설레는 열매를 낙원을 꽃 청춘이 이것이다.<br>
+                 풀밭에 청춘이 황금시대다. 소금이라 위하여, 모래뿐일 것이다. 꽃이 할지니,<br>
+                  열락의 구하기 철환하였는가? 광야에서 이상의 있는 같은 못할 무엇을<br> 심장의 청춘에서만 하
+                  는 칼이다. 심장은 있는 원대하고, 내는 맺어,<br> 목숨이 교향악이다.<br>
+         </p>
+             
+        </article>
+    </div>
+
+    <!-- works -->
+     <section id="works">
+        <header class="section_header">
+            <span>projects</span>
+            <h2>MY WORKS</h2>
+        </header>
+        <nav>
+            <a href="#">all</a>
+            <a href="#">Branding</a>
+            <a href="#">Advertising</a>
+            <a href="#">Besides</a>
+        </nav>
+
+     </section>
+        <!-- 작품목록 -->
+        <ul id="work_list">
+            <li>
+                <a data-fancybox="gallery" href="images/logo-pop.jpg">
+                    <img src="images/logo.png" alt="디자인작품(팝업창)">
+                    <div class="info">
+                        <h4>Logo Design</h4>
+                        <p>헬스클럽 앱을 주제로<br> 로고와 아이콘을 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <!-- 작품 이미지 팝업 -->
+                <a data-fancybox="gallery" href="images/banner-pop.jpg">
+                    <img src="images/banner.jpg" alt="디자인작품(팝업창)">
+                    <div class="info">
+                        <h4>Banner Design</h4>
+                        <p>G마켓 배너 레이아웃을<br> 참고하여 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a  data-fancybox="gallery" href="images/mail-pop.jpg">
+                    <img src="images/mail.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Event Mail Design</h4>
+                        <p>메일로 수신되는<br> 광고용 이벤트 메일을 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a  data-fancybox="gallery" href="images/reflet-pop.jpg">
+                    <img src="images/reflet.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Reflet Design</h4>
+                        <p>필라테스와 피트니스 클럽의<br>전단지를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery"  href="images/card-pop.jpg">
+                    <img src="images/card.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Card UI Design</h4>
+                        <p>SNS에서 쉽게 볼 수 있는 <br>카드 뉴스를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="work01.html">
+                    <img src="images/hp.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Homepage Renewal</h4>
+                        <p>기존에 있던 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery"  href="images/icon-pop.jpg">
+                    <img src="images/icon.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Icon Design</h4>
+                        <p>날씨 아이콘세트와 그림자가 반영된<br>플랫 아이콘을 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery"  href="images/app-pop.jpg">
+                    <img src="images/app.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>App UI Design</h4>
+                        <p>날씨 아이콘 디자인을 바탕으로<br>App Icon과 UI를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery"  href="images/illust-pop.png">
+                    <img src="images/illus.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Illust Design</h4>
+                        <p>요가 일러스트를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    
+     <!-- 푸터 -->
+  <footer>
+    <section id="contact">
+        <header class="section_header">
+            <!-- <h4>문의주세요</h4> -->
+            <h2>CONTACT</h2>
+        </header>
+    </section>   
+    <ul id="info_list">
+        <li>Email : ckwlswn11@naver.com</li>
+        <li>Tel : 010-1234-5678</li>
+        <li>Instagram : oul_u_y</li>
+    </ul> 
+    <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p>
+</footer>  
+  
+</body>
+</html>
