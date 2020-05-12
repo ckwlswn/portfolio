@@ -333,8 +333,6 @@ section article h3 {
     border-radius: 10px;
     width: 420px;
     padding: 10px;
-    color: #fff;
-    text-shadow: 1px 1px 1px #666;
 }
 section article img {
     margin-left: 13px;
@@ -342,8 +340,6 @@ section article img {
 section article p {
     /* margin-left: 60px; */
     margin-top: 50px;
-    /* margin-left: 120px; */
-    text-align: center;
 }
 section article .msub {
     margin-left: 120px;
@@ -357,7 +353,6 @@ section article .msub {
     text-align: center;
     border-radius: 10px;
     font-size: 14px;
-    margin: 0 auto;
 }
 #project a { color: #fff;
 font-weight: bolder;
