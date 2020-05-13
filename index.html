@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- 스타일 -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style연습.css">
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -71,15 +71,18 @@
             <h2>MY WORKS</h2>
         </header>
         <nav>
-            <a href="#works">all</a>
-            <a href="#">Branding</a>
-            <a href="#">Advertising</a>
-            <a href="#">Besides</a>
+            <a href="#work_list_all">all</a>
+            <a href="#brand">Branding</a>
+            <a href="#ad">Advertising</a>
+            <a href="#be">Besides</a>
         </nav>
 
      </section>
         <!-- 작품목록 -->
-        <ul id="work_list">
+        <div id="work_list_all">
+            <!-- brand -->
+        <ul id="brand">
+        
             <li>
                 <a data-fancybox="gallery" href="images/logo-pop.jpg">
                     <img src="images/logo.png" alt="디자인작품(팝업창)">
@@ -89,6 +92,9 @@
                     </div>
                 </a>
             </li>
+            </ul>
+            <!-- ad -->
+            <ul id="ad">
             <li>
                 <!-- 작품 이미지 팝업 -->
                 <a data-fancybox="gallery" href="images/banner-pop.jpg">
@@ -99,6 +105,7 @@
                     </div>
                 </a>
             </li>
+        
             <li>
                 <a  data-fancybox="gallery" href="images/mail-pop.jpg">
                     <img src="images/mail.jpg" alt="작품이미지2">
@@ -126,6 +133,9 @@
                     </div>
                 </a>
             </li>
+        </ul>
+            <!-- be -->
+            <ul id="be">
             <li>
                 <a href="work01.html">
                     <img src="images/hp.jpg" alt="작품이미지2">
@@ -163,6 +173,7 @@
                 </a>
             </li>
         </ul>
+        </div>
     </section>
 
     
@@ -180,7 +191,35 @@
         <li>Instagram : oul_u_y</li>
     </ul> 
     <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p>
-</footer>  
+</footer> 
+
+<script>
+    $(function(){
+
+      // 탭 버튼 이벤트
+      $('#works nav a').on('click', function(){
+        // 카테고리명(hash값) 확인
+        var cat_name = $(this).attr('href');
+        console.log(cat_name)
+        
+        // 해당 아이디의 목록을 표시
+        if(cat_name !== '#work_list_all'){
+          // 일반 카테고리
+          $('#work_list_all > ul').hide(200);
+          $(cat_name).show(200);
+        } else {
+          // all 버튼을 누른 경우
+          $('#work_list_all > ul').show(200);
+        }
+
+        return false; // 하이퍼링크 기본이벤트 금지
+
+      })
+
+
+    });
+  </script> 
+  
   
 </body>
 </html>

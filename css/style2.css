@@ -1,0 +1,120 @@
+/* style2.css */
+* {
+    margin: 0; padding: 0;
+}
+ul { list-style-type: none;}
+a { text-decoration: none;}
+body {
+    text-align: center;
+}
+
+
+header h1 {
+    background: #000000;
+    box-shadow: 1px 1px 7px #999;
+}
+header h1 a {
+    color: #ffffff;
+    font-size: 48px;
+    display: block;
+   
+
+    
+}
+
+nav ul li {
+    display: inline-block;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+nav ul li a {
+    color: #6b6b6d;
+}
+
+/* 2단계 메뉴 */
+#gnb {
+    position: absolute;
+    top: 50px; left: 30%;
+    text-align: center;
+}
+#gnb > .depth1 > li {
+    float: left;
+    /* width: 200px; */
+    /* outline: 1px solid red; */
+    padding-top: 5px;
+  
+    
+}
+#gnb > .depth1 > li:hover > .depth2 {
+    display: block;
+    height: 170px;
+    opacity: 1;
+
+}
+
+
+/* 2단계 메뉴 */
+#gnb .depth2 {
+    border: 1px solid #9b9c9e;
+    /* margin-top: 20px; */
+    height: 0;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.4s;
+    opacity: 0;
+    border-radius: 3px;
+}
+
+/* 메뉴 선택 효과 */
+#gnb .depth2  a:hover { text-decoration: underline;}
+#gnb .depth2 > li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 섹션 */
+#section1, #section3 {
+    height: 800px;
+    background: #666;
+    color: #fff;
+    padding: 40px;
+}
+
+#section1 {
+    background: url("https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    /* scroll(기본) | fixed(고정) ios는 호환안될듯 */
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+.box {
+    width: 720px;
+    height: 200px;
+    background: #000;
+    position: absolute;
+    right: 200px; top: 600px;
+    text-align: right;
+}
+.box h3, span {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.box span {
+    font-size: 72px;
+
+}
+#section3 {
+    background: url("http://placeimg.com/1600/1000/person");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+h1 { font-size: 50px;}
+
+#section2, #section4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
