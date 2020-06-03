@@ -1,0 +1,116 @@
+/* style.css */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;    
+}
+a { text-decoration: none;}
+ul { list-style-type: none;}
+/* .container-fluid { background-color: #3d82b1;} */
+  /* 모버일 높이가 35px에 패딩 조정 */
+  @media screen and (max-width: 767px){
+    body {
+        padding-top: 0px;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
+nav {
+    /* outline: 2px solid red; */
+    background: #3d82b1
+}
+
+section { padding: 20px;}
+
+
+/* 작품소개 */
+#works {
+    overflow: hidden;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    /* outline: 1px solid red; */
+    
+    
+}
+#works article p:first-of-type {
+    /* outline: 1px solid red; */
+    padding-top: 50px;
+}
+#works .container-fluid .row .img-fluid {
+    margin-top: 55px;
+}
+
+  /* 푸터 */
+  footer.container-fluid {
+    background-color: #3d82b1;
+    /* outline: 1px solid red; */
+    overflow: hidden;   
+}
+
+
+#contact .row > li {
+    /* display: inline-block; */
+    color: white;
+    /* outline: 1px solid red; */
+    list-style-type: none;
+    margin-top: 20px;
+}
+#contact .row > li:first-child { font-size: 20px; margin-top: 15px;}
+#contact .row > p {
+    
+    color: white;
+    text-align: center;
+    bottom: 50px;
+    font-size: 12px;
+    
+}
+
+
+#work01 #works {
+    padding: 0;
+}
+
+/*#work01 con */
+section article {
+    /* padding-top: 40px; */
+    padding-bottom: 30px;
+    
+} 
+#works .container .row h4 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#works .container .row p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+#project {
+    width: 170px;
+    height: 50px;
+    line-height: 30px;
+    background: #f48f59;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+#project a { 
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px #915507;
+    line-height: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+}   
+#project:hover {
+    background: #da7640;
+}
+#project:hover > a { color: #f0f0f0 }
+

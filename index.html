@@ -3,71 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <!-- 제이쿼리 -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <!-- 팬시박스 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <!-- 스타일 -->
-    <link rel="stylesheet" href="css/style연습.css">
+    <meta property="og:image" content="https://webdevtrick.com/wp-content/uploads/javascript-typing-effect.jpg">
+    <title>2020PORTFOLIO</title>
+    <!-- 부트스트랩4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- 부트스트랩4에서는 폰트어썸써야되서 이거 추가해줌 (클래스명을 fas-fa)-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- 부트스트랩4 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <!-- 팬시박스 -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+     <!-- 스타일 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/do_type.js"></script>
     <!-- 폰트 -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="main_header">
-        <div class="logo">
-            <h1><a href="./">PORTFOLIO</a></h1>
-        </div>
-        <nav id="main_gnb">
-            <ul>
-                <li><a href="./">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#works">works</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
+        <div class="container">
+            <!-- 로고 -->
+            <a href="index.html" class="navbar-brand">PORTFOLIO</a>
+            <!-- 토글 버튼 -->
+            <button 
+                type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbar-content"    
+            >
+                <!-- 토글 아이콘 -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <section id="main_visual">
-        <div class="left">
-            <header class="title">
-                <h2>
-                    <span>Hello, I'm</span>
-                    <span>Cha Jin Ju</span>
-                </h2>
-            </header>
+            <!-- 네비게이션 콘텐츠(목록) -->
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <!-- ml-auto 우로배치, mr-auto 좌로배치 -->
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="right"></div>
-        <!-- 여기는 이미지(bg) -->
+    </nav>
+    <section id="visual" class="container-fluid">
+        <!-- 로우를 안잡으면 여백생김 -->
+        <div class="row">
+        <!-- img-fluid : 가변 이미지 -->
+        <img class="img-fluid" src="./images//134.jpg" alt="visual">
+        <h1 class="do_type" title="Web Designer & Publisher *Cha Jin Ju">title</h1>
+        </div>
     </section>
-
-<!-- about -->
-<section id="about">
-    <div class="about_left">
-        <div class="box"></div>
-        <img src="images/pic.jpeg" alt="profile image">
+    <script src="./do_type.min.js"></script>
+    <script>
+    
+        // run auto type
+        do_type.type('h1');
+        
+      </script>
+        <!-- 1200px 고정 틀 -->
+    <div class="container-fluid">
+    <section id="about" class="container">
+        <h1>About me</h1>
+        <div class="row">
+            <article class="col-md-7">
+                <img class="img-fluid" src="./images/about.jpg" alt="">
+            </article>
+            <article class="col-md-5">
+                <section id="skill">
+                    <h3>Skill</h3>
+                    <article class="container">
+                            <ul class="skill_list">
+                                <li><span class="bar"></span><b>Photoshop</b></li>
+                                <li><span class="bar"></span><b>Illustrator</b></li>
+                                <li><span class="bar"></span><b>html5</b></li>
+                                <li><span class="bar"></span><b>CSS3</b></li>
+                                <li><span class="bar"></span><b>JavaScript &amp jQuery</b></li>                            
+                            </ul>	
+            </article>
     </div>
-    <div class="about_right">
-        <header class="section_header">
-            <span>who am i</span>
-            <h2>ABOUT</h2>
-        </header>
-        <article>
-            <p>
-                보내는 설레는 열매를 낙원을 꽃 청춘이 이것이다.<br>
-                 풀밭에 청춘이 황금시대다. 소금이라 위하여, 모래뿐일 것이다. 꽃이 할지니,<br>
-                  열락의 구하기 철환하였는가? 광야에서 이상의 있는 같은 못할 무엇을<br> 심장의 청춘에서만 하
-                  는 칼이다. 심장은 있는 원대하고, 내는 맺어,<br> 목숨이 교향악이다.<br>
-         </p>
-             
-        </article>
+    </section>
     </div>
+    
 
-    <!-- works -->
-     <section id="works">
+
+     <!-- container-fluid ( 100% 배경틀 ) -->
+    
+        <!-- 1200px 고정 틀 -->
+    <section id="works" class="container">
         <header class="section_header">
-            <span>projects</span>
             <h2>MY WORKS</h2>
         </header>
         <nav>
@@ -76,150 +108,149 @@
             <a href="#ad">Advertising</a>
             <a href="#be">Besides</a>
         </nav>
-
-     </section>
-        <!-- 작품목록 -->
-        <div id="work_list_all">
-            <!-- brand -->
-        <ul id="brand">
-        
-            <li>
-                <a data-fancybox="gallery" href="images/logo-pop.jpg">
-                    <img src="images/logo.png" alt="디자인작품(팝업창)">
-                    <div class="info">
-                        <h4>Logo Design</h4>
-                        <p>헬스클럽 앱을 주제로<br> 로고와 아이콘을 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-            </ul>
-            <!-- ad -->
-            <ul id="ad">
-            <li>
-                <!-- 작품 이미지 팝업 -->
-                <a data-fancybox="gallery" href="images/banner-pop.jpg">
-                    <img src="images/banner.jpg" alt="디자인작품(팝업창)">
-                    <div class="info">
-                        <h4>Banner Design</h4>
-                        <p>G마켓 배너 레이아웃을<br> 참고하여 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-        
-            <li>
-                <a  data-fancybox="gallery" href="images/mail-pop.jpg">
-                    <img src="images/mail.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>Event Mail Design</h4>
-                        <p>메일로 수신되는<br> 광고용 이벤트 메일을 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a  data-fancybox="gallery" href="images/reflet-pop.jpg">
-                    <img src="images/reflet.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>Reflet Design</h4>
-                        <p>필라테스와 피트니스 클럽의<br>전단지를 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a data-fancybox="gallery"  href="images/card-pop.jpg">
-                    <img src="images/card.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>Card UI Design</h4>
-                        <p>SNS에서 쉽게 볼 수 있는 <br>카드 뉴스를 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-            <!-- be -->
-            <ul id="be">
-            <li>
-                <a href="work01.html">
-                    <img src="images/hp.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>Homepage Renewal</h4>
-                        <p>기존에 있던 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a data-fancybox="gallery"  href="images/icon-pop.jpg">
-                    <img src="images/icon.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>Icon Design</h4>
-                        <p>날씨 아이콘세트와 그림자가 반영된<br>플랫 아이콘을 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a data-fancybox="gallery"  href="images/app-pop.jpg">
-                    <img src="images/app.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>App UI Design</h4>
-                        <p>날씨 아이콘 디자인을 바탕으로<br>App Icon과 UI를 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a data-fancybox="gallery"  href="images/illust-pop.png">
-                    <img src="images/illus.jpg" alt="작품이미지2">
-                    <div class="info">
-                        <h4>Illust Design</h4>
-                        <p>요가 일러스트를 디자인 하였습니다.</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        </div>
     </section>
-
+     <!-- 작품목록 -->
+     <div id="work_list_all" class="container">
+        <!-- brand -->
+    <ul id="brand">
     
-     <!-- 푸터 -->
-  <footer>
-    <section id="contact">
-        <header class="section_header">
-            <!-- <h4>문의주세요</h4> -->
-            <h2>CONTACT</h2>
-        </header>
-    </section>   
-    <ul id="info_list">
-        <li>Email : ckwlswn11@naver.com</li>
-        <li>Tel : 010-1234-5678</li>
-        <li>Instagram : oul_u_y</li>
-    </ul> 
-    <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p>
-</footer> 
+        <li>
+            <a data-fancybox="gallery" href="images/logo-pop.jpg">
+                <img src="images/logo.png" alt="디자인작품(팝업창)">
+                <div class="info">
+                    <h4>Logo Design</h4>
+                    <p>헬스클럽 앱을 주제로<br> 로고와 아이콘을 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a data-fancybox="gallery" href="images/logo2-pop.jpg">
+                <img src="images/logo2.png" alt="디자인작품(팝업창)">
+                <div class="info">
+                    <h4>Logo Design</h4>
+                    <p>AIR WEAR라는 가상의 브랜드를 주제로<br> 로고를 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        </ul>
+        <!-- ad -->
+        <ul id="ad">
+        <li>
+            <!-- 작품 이미지 팝업 -->
+            <a data-fancybox="gallery" href="images/banner-pop.jpg">
+                <img src="images/banner.jpg" alt="디자인작품(팝업창)">
+                <div class="info">
+                    <h4>Banner Design</h4>
+                    <p>G마켓 배너 레이아웃을<br> 참고하여 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+    
+        <li>
+            <a  data-fancybox="gallery" href="images/mail-pop.jpg">
+                <img src="images/mail.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Event Mail Design</h4>
+                    <p>메일로 수신되는 광고용<br> 이벤트 메일을 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a  data-fancybox="gallery" href="images/reflet-pop.jpg">
+                <img src="images/reflet.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Reflet Design</h4>
+                    <p>필라테스와 피트니스 클럽의<br>전단지를 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+       
+        <li>
+            <a data-fancybox="gallery"  href="images/cardui-pop.jpg">
+                <img src="images/cardui.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Card UI Design</h4>
+                    <p>카드형식으로 구매페이지를 <br> 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+        <!-- be -->
+        <ul id="be">
+        <li>
+            <a href="work01.html">
+                <img src="images/hp.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Homepage Renewal</h4>
+                    <p>투자자문 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="work02.html">
+                <img src="images/hp2.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Homepage Renewal</h4>
+                    <p>공차 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="work03.html">
+                <img src="images/hp3.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Homepage Renewal</h4>
+                    <p>호텔 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a data-fancybox="gallery"  href="images/icon-pop.jpg">
+                <img src="images/icon.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Icon Design</h4>
+                    <p>날씨 아이콘세트와 그림자가 반영된<br>플랫 아이콘을 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a data-fancybox="gallery"  href="images/app-pop.jpg">
+                <img src="images/app.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>App UI Design</h4>
+                    <p>날씨 아이콘 디자인을 바탕으로<br>App Icon과 UI를 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a data-fancybox="gallery"  href="images/illust-pop.png">
+                <img src="images/illus.jpg" alt="작품이미지2">
+                <div class="info">
+                    <h4>Illust Design</h4>
+                    <p>요가 일러스트를 디자인 하였습니다.</p>
+                </div>
+            </a>
+        </li>
+       
+    </ul>
+    </div>
+   
 
-<script>
-    $(function(){
 
-      // 탭 버튼 이벤트
-      $('#works nav a').on('click', function(){
-        // 카테고리명(hash값) 확인
-        var cat_name = $(this).attr('href');
-        console.log(cat_name)
-        
-        // 해당 아이디의 목록을 표시
-        if(cat_name !== '#work_list_all'){
-          // 일반 카테고리
-          $('#work_list_all > ul').hide(200);
-          $(cat_name).show(200);
-        } else {
-          // all 버튼을 누른 경우
-          $('#work_list_all > ul').show(200);
-        }
+        <footer class="container-fluid">
+            <section id="contact" class="container">
+           <div class="row">
+                <li class="col-md-4">CONTACT</li>
+                <li class="col-md-3"><i class="fas fa-envelope"></i> &nbsp;ckwlswn11@naver.com</li>
+                <li class="col-md-2"><i class="fas fa-mobile-alt"></i>&nbsp; 010-6402-1720</li>
+                <li class="col-md-3"><i class="fas fa-location-arrow"></i>&nbsp;Yangcheon-gu, Seoul</li>
+           
+            <!-- <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p> -->
+            </div>
+         </section>
+        </footer> 
 
-        return false; // 하이퍼링크 기본이벤트 금지
+   
 
-      })
-
-
-    });
-  </script> 
-  
-  
 </body>
 </html>
