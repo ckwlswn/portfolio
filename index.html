@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,35 @@
     <!-- 부트스트랩4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- 부트스트랩4에서는 폰트어썸써야되서 이거 추가해줌 (클래스명을 fas-fa)-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<!-- 제이쿼리 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- 제이쿼리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- 부트스트랩4 JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-     <!-- 팬시박스 -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-     <!-- 스타일 -->
+    <!-- 팬시박스 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- 스타일 -->
     <link rel="stylesheet" href="css/style.css">
     <!-- JS -->
     <script src="./js/main.js"></script>
     <script src="./js/do_type.js"></script>
     <!-- 폰트 -->
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Titillium+Web:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar navbar-dark fixed-top navbar-expand-md">
         <div class="container">
             <!-- 로고 -->
             <a href="index.html" class="navbar-brand">PORTFOLIO</a>
             <!-- 토글 버튼 -->
-            <button 
-                type="button"
-                class="navbar-toggler"
-                data-toggle="collapse"
-                data-target="#navbar-content"    
-            >
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
                 <!-- 토글 아이콘 -->
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,49 +55,48 @@
         </div>
     </nav>
     <section id="visual" class="container-fluid">
-        <!-- 로우를 안잡으면 여백생김 -->
-        <div class="row">
-        <!-- img-fluid : 가변 이미지 -->
-        <img class="img-fluid" src="./images//134.jpg" alt="visual">
-        <h1 class="do_type" title="Web Designer & Publisher *Cha Jin Ju">title</h1>
-        </div>
+            <!-- img-fluid : 가변 이미지 -->
+            <img class="img-fluid" src="./images//134.jpg" alt="visual">
+            <div class="container">
+                <h1 class="do_type" title="Web Designer & Publisher *Cha Jin Ju">title</h1>
+            </div>
     </section>
     <script src="./do_type.min.js"></script>
     <script>
-    
+
         // run auto type
         do_type.type('h1');
-        
-      </script>
-        <!-- 1200px 고정 틀 -->
+
+    </script>
+    <!-- 1200px 고정 틀 -->
     <div class="container-fluid">
-    <section id="about" class="container">
-        <h1>About me</h1>
-        <div class="row">
-            <article class="col-md-7">
-                <img class="img-fluid" src="./images/about.jpg" alt="">
-            </article>
-            <article class="col-md-5">
-                <section id="skill">
-                    <h3>Skill</h3>
-                    <article class="container">
+        <section id="about" class="container">
+            <h1>About me</h1>
+            <div class="row">
+                <article class="col-md-7">
+                    <img class="img-fluid" src="./images/about.jpg" alt="">
+                </article>
+                <article class="col-md-5">
+                    <section id="skill">
+                        <h3>Skill</h3>
+                        <article class="container">
                             <ul class="skill_list">
                                 <li><span class="bar"></span><b>Photoshop</b></li>
                                 <li><span class="bar"></span><b>Illustrator</b></li>
                                 <li><span class="bar"></span><b>html5</b></li>
                                 <li><span class="bar"></span><b>CSS3</b></li>
-                                <li><span class="bar"></span><b>JavaScript &amp jQuery</b></li>                            
-                            </ul>	
-            </article>
+                                <li><span class="bar"></span><b>JavaScript &amp jQuery</b></li>
+                            </ul>
+                        </article>
+            </div>
+        </section>
     </div>
-    </section>
-    </div>
-    
 
 
-     <!-- container-fluid ( 100% 배경틀 ) -->
-    
-        <!-- 1200px 고정 틀 -->
+
+    <!-- container-fluid ( 100% 배경틀 ) -->
+
+    <!-- 1200px 고정 틀 -->
     <section id="works" class="container">
         <header class="section_header">
             <h2>MY WORKS</h2>
@@ -109,148 +108,149 @@
             <a href="#be">Besides</a>
         </nav>
     </section>
-     <!-- 작품목록 -->
-     <div id="work_list_all" class="container">
+    <!-- 작품목록 -->
+    <div id="work_list_all" class="container">
         <!-- brand -->
-    <ul id="brand">
-    
-        <li>
-            <a data-fancybox="gallery" href="images/logo-pop.jpg">
-                <img src="images/logo.png" alt="디자인작품(팝업창)">
-                <div class="info">
-                    <h4>Logo Design</h4>
-                    <p>헬스클럽 앱을 주제로<br> 로고와 아이콘을 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a data-fancybox="gallery" href="images/logo2-pop.jpg">
-                <img src="images/logo2.png" alt="디자인작품(팝업창)">
-                <div class="info">
-                    <h4>Logo Design</h4>
-                    <p>AIR WEAR라는 가상의 브랜드를 주제로<br> 로고를 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
+        <ul id="brand">
+
+            <li>
+                <a data-fancybox="gallery" href="images/logo-pop.jpg">
+                    <img src="images/logo.png" alt="디자인작품(팝업창)">
+                    <div class="info">
+                        <h4>Logo Design</h4>
+                        <p>헬스클럽 앱을 주제로<br> 로고와 아이콘을 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/logo2-pop.jpg">
+                    <img src="images/logo2.png" alt="디자인작품(팝업창)">
+                    <div class="info">
+                        <h4>Logo Design</h4>
+                        <p>AIR WEAR라는 가상의 브랜드를 주제로<br> 로고를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
         </ul>
         <!-- ad -->
         <ul id="ad">
-        <li>
-            <!-- 작품 이미지 팝업 -->
-            <a data-fancybox="gallery" href="images/banner-pop.jpg">
-                <img src="images/banner.jpg" alt="디자인작품(팝업창)">
-                <div class="info">
-                    <h4>Banner Design</h4>
-                    <p>G마켓 배너 레이아웃을<br> 참고하여 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-    
-        <li>
-            <a  data-fancybox="gallery" href="images/mail-pop.jpg">
-                <img src="images/mail.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Event Mail Design</h4>
-                    <p>메일로 수신되는 광고용<br> 이벤트 메일을 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a  data-fancybox="gallery" href="images/reflet-pop.jpg">
-                <img src="images/reflet.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Reflet Design</h4>
-                    <p>필라테스와 피트니스 클럽의<br>전단지를 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-       
-        <li>
-            <a data-fancybox="gallery"  href="images/cardui-pop.jpg">
-                <img src="images/cardui.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Card UI Design</h4>
-                    <p>카드형식으로 구매페이지를 <br> 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-    </ul>
+            <li>
+                <!-- 작품 이미지 팝업 -->
+                <a data-fancybox="gallery" href="images/banner-pop.jpg">
+                    <img src="images/banner.jpg" alt="디자인작품(팝업창)">
+                    <div class="info">
+                        <h4>Banner Design</h4>
+                        <p>G마켓 배너 레이아웃을<br> 참고하여 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a data-fancybox="gallery" href="images/mail-pop.jpg">
+                    <img src="images/mail.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Event Mail Design</h4>
+                        <p>메일로 수신되는 광고용<br> 이벤트 메일을 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/reflet-pop.jpg">
+                    <img src="images/reflet.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Reflet Design</h4>
+                        <p>필라테스와 피트니스 클럽의<br>전단지를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a data-fancybox="gallery" href="images/cardui-pop.jpg">
+                    <img src="images/cardui.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Card UI Design</h4>
+                        <p>카드형식으로 구매페이지를 <br> 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
         <!-- be -->
         <ul id="be">
-        <li>
-            <a href="work01.html">
-                <img src="images/hp.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Homepage Renewal</h4>
-                    <p>투자자문 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="work02.html">
-                <img src="images/hp2.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Homepage Renewal</h4>
-                    <p>공차 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="work03.html">
-                <img src="images/hp3.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Homepage Renewal</h4>
-                    <p>호텔 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a data-fancybox="gallery"  href="images/icon-pop.jpg">
-                <img src="images/icon.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Icon Design</h4>
-                    <p>날씨 아이콘세트와 그림자가 반영된<br>플랫 아이콘을 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a data-fancybox="gallery"  href="images/app-pop.jpg">
-                <img src="images/app.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>App UI Design</h4>
-                    <p>날씨 아이콘 디자인을 바탕으로<br>App Icon과 UI를 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a data-fancybox="gallery"  href="images/illust-pop.png">
-                <img src="images/illus.jpg" alt="작품이미지2">
-                <div class="info">
-                    <h4>Illust Design</h4>
-                    <p>요가 일러스트를 디자인 하였습니다.</p>
-                </div>
-            </a>
-        </li>
-       
-    </ul>
+            <li>
+                <a href="work01.html">
+                    <img src="images/hp.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Homepage Renewal</h4>
+                        <p>투자자문 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="work02.html">
+                    <img src="images/hp2.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Homepage Renewal</h4>
+                        <p>공차 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="work03.html">
+                    <img src="images/hp3.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Homepage Renewal</h4>
+                        <p>호텔 홈페이지를<br> 새롭게 리뉴얼 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/icon-pop.jpg">
+                    <img src="images/icon.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Icon Design</h4>
+                        <p>날씨 아이콘세트와 그림자가 반영된<br>플랫 아이콘을 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/app-pop.jpg">
+                    <img src="images/app.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>App UI Design</h4>
+                        <p>날씨 아이콘 디자인을 바탕으로<br>App Icon과 UI를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox="gallery" href="images/illust-pop.png">
+                    <img src="images/illus.jpg" alt="작품이미지2">
+                    <div class="info">
+                        <h4>Illust Design</h4>
+                        <p>요가 일러스트를 디자인 하였습니다.</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
     </div>
-   
 
 
-        <footer class="container-fluid">
-            <section id="contact" class="container">
-           <div class="row">
+
+    <footer class="container-fluid">
+        <section id="contact" class="container">
+            <div class="row">
                 <li class="col-md-4">CONTACT</li>
                 <li class="col-md-3"><i class="fas fa-envelope"></i> &nbsp;ckwlswn11@naver.com</li>
                 <li class="col-md-2"><i class="fas fa-mobile-alt"></i>&nbsp; 010-6402-1720</li>
                 <li class="col-md-3"><i class="fas fa-location-arrow"></i>&nbsp;Yangcheon-gu, Seoul</li>
-           
-            <!-- <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p> -->
-            </div>
-         </section>
-        </footer> 
 
-   
+                <!-- <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p> -->
+            </div>
+        </section>
+    </footer>
+
+
 
 </body>
+
 </html>

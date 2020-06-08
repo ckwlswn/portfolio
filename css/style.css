@@ -21,15 +21,24 @@ nav {
     /* outline: 2px solid red; */
     background: #0C3247;
 }
+#visual {
+    position: relative;
+}
+
+#visual .container {
+    position: absolute;
+    left: 80%; bottom: 10%;
+    transform: translateX(-80%);
+    /* outline: 1px solid green; */
+}
+#visual.container-fluid { padding: 0;}
 #visual .row {position: relative;}
 .do_type {
-    position: absolute;
     color: #fff;
-    font-size: 84px;
-    left: 48%; top: 60%;
+    font-size: 5vw;
     text-align: right;
     text-shadow: 1px 1px 4px #04275c;
-
+    /* outline: 1px solid red; */
     animation: type 1s linear;
 }
 @keyframes type {
@@ -68,18 +77,8 @@ nav {
     position: absolute;
     left: 45%; 
 }
-@media screen and (max-width: 767px){
-    #visual .row button {
-        position: absolute;
-        left: 20%;
-    }
-   
-    .do_type {
-        font-size: 24px;
-        position: absolute;
-        left: 43%;
-    }
-}
+
+
 section { padding: 20px;}
 
 .container-fluid {

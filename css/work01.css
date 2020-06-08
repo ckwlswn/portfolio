@@ -16,7 +16,7 @@ ul { list-style-type: none;}
 }
 nav {
     /* outline: 2px solid red; */
-    background: #3d82b1
+    background: #0C3247;
 }
 
 section { padding: 20px;}
@@ -37,7 +37,7 @@ section { padding: 20px;}
 
   /* 푸터 */
   footer.container-fluid {
-    background-color: #3d82b1;
+    background-color: #0C3247;
     /* outline: 1px solid red; */
     overflow: hidden;   
 }
