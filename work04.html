@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+     <!-- 부트스트랩4 CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <!-- 부트스트랩4에서는 폰트어썸써야되서 이거 추가해줌 (클래스명을 fas-fa)-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+     <!-- 제이쿼리 -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <!-- 부트스트랩4 JS -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <!-- 팬시박스 -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      <!-- 스타일 -->
+     <link rel="stylesheet" href="css/work04.css">
+     <!-- JS -->
+     <script src="./js/main.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="work01">
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
+        <div class="container">
+            <!-- 로고 -->
+            <a href="index.html" class="navbar-brand">PORTFOLIO</a>
+            <!-- 토글 버튼 -->
+            <button 
+                type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbar-content"    
+            >
+                <!-- 토글 아이콘 -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 네비게이션 콘텐츠(목록) -->
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <!-- ml-auto 우로배치, mr-auto 좌로배치 -->
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <!-- works -->
+ <section id="works">
+    <header class="container-fluid">
+        <div class="row">
+            <img src="./images/롬앤.jpg" alt="" class="img-fluid">
+        </div>
+    </header>
+    <article class="container">
+        <div class="row">
+        <!-- 여기에 작품 내용 추가 -->
+        <article class="col-md-12">
+            <h4>01 기존 홈페이지 개선사항 파악</h4>
+            <img class="img-fluid" src="./images/롬앤개선.jpg" alt="">
+            <h4>02 와이어프레임 설계 ▶ 리뉴얼</h4>   
+            <img class="img-fluid" src="./images/롬앤 와이어.jpg" alt="">
+            <p><b>코스메틱 브랜드 rom&nd</b>의 홈페이지 메인을 리뉴얼 하였습니다.</p>
+            <p>기존 메인 페이지의 개선사항을 파악하고, 그것을 토대로 와이어프레임을 설계해 레이아웃을 조금씩 정리했습니다.
+                <br>기존 홈페이지는 상품의 정렬이 부족하고, 다소 산만하게 느껴졌기 때문에 <br>
+                상품을 보기 쉽게 같은 종류대로 정렬했고, 조화롭지 못하다고 생각한 색감들도 살짝 바꾸어 기존보다 깔끔하게 
+                리뉴얼 해보았습니다.
+        </p><br>
+        </article>
+    
+        </div>
+    </article>
+
+
+
+ 
+    <div id="project">
+    <a href="https://ckwlswn.github.io/rom-nd/" target="blank">프로젝트 보러가기</a>
+    </div>
+</section>
+
+
+<footer class="container-fluid">
+    <section id="contact" class="container">
+   <div class="row">
+        <li class="col-md-4">CONTACT</li>
+        <li class="col-md-3"><i class="fas fa-envelope"></i> &nbsp;ckwlswn11@naver.com</li>
+        <li class="col-md-2"><i class="fas fa-mobile-alt"></i>&nbsp; 010-6402-1720</li>
+        <li class="col-md-3"><i class="fas fa-location-arrow"></i>&nbsp;Yangcheon-gu, Seoul</li>
+   
+    <!-- <p>COPYRIGHT &copy; 2020.06 ALL RIGHTS RESERVED.</p> -->
+    </div>
+ </section>
+</footer> 
+  
+</body>
+</html>
